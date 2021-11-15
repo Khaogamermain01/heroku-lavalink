@@ -1,4 +1,4 @@
-# heroku-lavalink
+# heroku-lavalink ( This is a fork (Credits to freyacodes) )
 Easily deploy a [lavalink](https://github.com/freyacodes/Lavalink) server on heroku.
 This is a very elementary and barebones approach, but reliable nonetheless.
 This branch will automatically download the latest Lavalink jar file.
