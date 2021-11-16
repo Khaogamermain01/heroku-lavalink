@@ -1,6 +1,6 @@
-
-const fs = require("fs")
-const fetch = require("node-fetch")
+const fs = require("fs");
+const fetch = require("node-fetch");
+const ip = require("ip");
 
 let application = fs.readFileSync("./application.yml", "utf8")
 
@@ -40,6 +40,7 @@ function startLavalink() {
 
     child.stdout.on("data", (data) => {
         console.log(data);
+        console.log(ip.address());
     });
 
     child.stderr.on("data", (data) => {
